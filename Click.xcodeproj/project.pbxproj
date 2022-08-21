@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2443A7E428A42F0B00FA9C3A /* Click.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2443A7E328A42F0B00FA9C3A /* Click.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2443A7E928A42F0C00FA9C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2443A7E828A42F0C00FA9C3A /* Assets.xcassets */; };
+		2443A7EF28A42F0C00FA9C3A /* Click WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2443A7EE28A42F0C00FA9C3A /* Click WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2443A7F428A42F0C00FA9C3A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443A7F328A42F0C00FA9C3A /* MainView.swift */; };
+		2443A7F628A42F0C00FA9C3A /* ClickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443A7F528A42F0C00FA9C3A /* ClickApp.swift */; };
+		2443A80D28A4337300FA9C3A /* SettingsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2443A80C28A4337300FA9C3A /* SettingsProvider.swift */; };
+		2454381128B2322B0015AD15 /* WorkoutWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2454381028B2322B0015AD15 /* WorkoutWorker.swift */; };
+		2454381328B233230015AD15 /* TimerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2454381228B233230015AD15 /* TimerWorker.swift */; };
+		2454381728B243920015AD15 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2454381628B243920015AD15 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2443A7E528A42F0B00FA9C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2443A7D928A42F0B00FA9C3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2443A7E228A42F0B00FA9C3A;
+			remoteInfo = "Click WatchKit App";
+		};
+		2443A7F028A42F0C00FA9C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2443A7D928A42F0B00FA9C3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2443A7ED28A42F0C00FA9C3A;
+			remoteInfo = "Click WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2443A80428A42F0C00FA9C3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2443A7EF28A42F0C00FA9C3A /* Click WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2443A80828A42F0C00FA9C3A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2443A7E428A42F0B00FA9C3A /* Click.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2443A7DF28A42F0B00FA9C3A /* Click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Click.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2443A7E328A42F0B00FA9C3A /* Click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Click.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2443A7E828A42F0C00FA9C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2443A7EE28A42F0C00FA9C3A /* Click WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Click WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2443A7F328A42F0C00FA9C3A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2443A7F528A42F0C00FA9C3A /* ClickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickApp.swift; sourceTree = "<group>"; };
+		2443A7FE28A42F0C00FA9C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2443A80C28A4337300FA9C3A /* SettingsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProvider.swift; sourceTree = "<group>"; };
+		2454381028B2322B0015AD15 /* WorkoutWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutWorker.swift; sourceTree = "<group>"; };
+		2454381228B233230015AD15 /* TimerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWorker.swift; sourceTree = "<group>"; };
+		2454381428B243920015AD15 /* Click WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Click WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		2454381628B243920015AD15 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2443A7EB28A42F0C00FA9C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2454381728B243920015AD15 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2443A7D828A42F0B00FA9C3A = {
+			isa = PBXGroup;
+			children = (
+				2443A7E728A42F0B00FA9C3A /* Click WatchKit App */,
+				2443A7F228A42F0C00FA9C3A /* Click WatchKit Extension */,
+				2443A7E028A42F0B00FA9C3A /* Products */,
+				2454381528B243920015AD15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2443A7E028A42F0B00FA9C3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2443A7DF28A42F0B00FA9C3A /* Click.app */,
+				2443A7E328A42F0B00FA9C3A /* Click.app */,
+				2443A7EE28A42F0C00FA9C3A /* Click WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2443A7E728A42F0B00FA9C3A /* Click WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2443A7E828A42F0C00FA9C3A /* Assets.xcassets */,
+			);
+			path = "Click WatchKit App";
+			sourceTree = "<group>";
+		};
+		2443A7F228A42F0C00FA9C3A /* Click WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2443A7F528A42F0C00FA9C3A /* ClickApp.swift */,
+				2443A7F328A42F0C00FA9C3A /* MainView.swift */,
+				2443A80C28A4337300FA9C3A /* SettingsProvider.swift */,
+				2454381228B233230015AD15 /* TimerWorker.swift */,
+				2454381028B2322B0015AD15 /* WorkoutWorker.swift */,
+				2454381428B243920015AD15 /* Click WatchKit Extension.entitlements */,
+				2443A7FE28A42F0C00FA9C3A /* Info.plist */,
+			);
+			path = "Click WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2454381528B243920015AD15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2454381628B243920015AD15 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2443A7DE28A42F0B00FA9C3A /* Click */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2443A80928A42F0C00FA9C3A /* Build configuration list for PBXNativeTarget "Click" */;
+			buildPhases = (
+				2443A7DD28A42F0B00FA9C3A /* Resources */,
+				2443A80828A42F0C00FA9C3A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2443A7E628A42F0B00FA9C3A /* PBXTargetDependency */,
+			);
+			name = Click;
+			productName = Click;
+			productReference = 2443A7DF28A42F0B00FA9C3A /* Click.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2443A7E228A42F0B00FA9C3A /* Click WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2443A80528A42F0C00FA9C3A /* Build configuration list for PBXNativeTarget "Click WatchKit App" */;
+			buildPhases = (
+				2443A7E128A42F0B00FA9C3A /* Resources */,
+				2443A80428A42F0C00FA9C3A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2443A7F128A42F0C00FA9C3A /* PBXTargetDependency */,
+			);
+			name = "Click WatchKit App";
+			productName = "Click WatchKit App";
+			productReference = 2443A7E328A42F0B00FA9C3A /* Click.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2443A7ED28A42F0C00FA9C3A /* Click WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2443A80128A42F0C00FA9C3A /* Build configuration list for PBXNativeTarget "Click WatchKit Extension" */;
+			buildPhases = (
+				2443A7EA28A42F0C00FA9C3A /* Sources */,
+				2443A7EB28A42F0C00FA9C3A /* Frameworks */,
+				2443A7EC28A42F0C00FA9C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Click WatchKit Extension";
+			productName = "Click WatchKit Extension";
+			productReference = 2443A7EE28A42F0C00FA9C3A /* Click WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2443A7D928A42F0B00FA9C3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Egor and the fucked up";
+				TargetAttributes = {
+					2443A7DE28A42F0B00FA9C3A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2443A7E228A42F0B00FA9C3A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2443A7ED28A42F0C00FA9C3A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2443A7DC28A42F0B00FA9C3A /* Build configuration list for PBXProject "Click" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2443A7D828A42F0B00FA9C3A;
+			productRefGroup = 2443A7E028A42F0B00FA9C3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2443A7DE28A42F0B00FA9C3A /* Click */,
+				2443A7E228A42F0B00FA9C3A /* Click WatchKit App */,
+				2443A7ED28A42F0C00FA9C3A /* Click WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2443A7DD28A42F0B00FA9C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2443A7E128A42F0B00FA9C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443A7E928A42F0C00FA9C3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2443A7EC28A42F0C00FA9C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2443A7EA28A42F0C00FA9C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443A7F628A42F0C00FA9C3A /* ClickApp.swift in Sources */,
+				2454381328B233230015AD15 /* TimerWorker.swift in Sources */,
+				2454381128B2322B0015AD15 /* WorkoutWorker.swift in Sources */,
+				2443A80D28A4337300FA9C3A /* SettingsProvider.swift in Sources */,
+				2443A7F428A42F0C00FA9C3A /* MainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2443A7E628A42F0B00FA9C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2443A7E228A42F0B00FA9C3A /* Click WatchKit App */;
+			targetProxy = 2443A7E528A42F0B00FA9C3A /* PBXContainerItemProxy */;
+		};
+		2443A7F128A42F0C00FA9C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2443A7ED28A42F0C00FA9C3A /* Click WatchKit Extension */;
+			targetProxy = 2443A7F028A42F0C00FA9C3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2443A7FF28A42F0C00FA9C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2443A80028A42F0C00FA9C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2443A80228A42F0C00FA9C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Click WatchKit Extension/Click WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Click WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Click WatchKit Extension";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires this permission to run in the background. It doesn't share or update any health related data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires this permission to run in the background. It doesn't share or update any health related data";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.prismade.Click.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		2443A80328A42F0C00FA9C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Click WatchKit Extension/Click WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Click WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Click WatchKit Extension";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires this permission to run in the background. It doesn't share or update any health related data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires this permission to run in the background. It doesn't share or update any health related data";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.prismade.Click.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		2443A80628A42F0C00FA9C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Click_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.prismade.Click.watchkitapp;
+				PRODUCT_NAME = Click;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		2443A80728A42F0C00FA9C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Click_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.prismade.Click.watchkitapp;
+				PRODUCT_NAME = Click;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		2443A80A28A42F0C00FA9C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.prismade.Click;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2443A80B28A42F0C00FA9C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.prismade.Click;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2443A7DC28A42F0B00FA9C3A /* Build configuration list for PBXProject "Click" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2443A7FF28A42F0C00FA9C3A /* Debug */,
+				2443A80028A42F0C00FA9C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2443A80128A42F0C00FA9C3A /* Build configuration list for PBXNativeTarget "Click WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2443A80228A42F0C00FA9C3A /* Debug */,
+				2443A80328A42F0C00FA9C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2443A80528A42F0C00FA9C3A /* Build configuration list for PBXNativeTarget "Click WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2443A80628A42F0C00FA9C3A /* Debug */,
+				2443A80728A42F0C00FA9C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2443A80928A42F0C00FA9C3A /* Build configuration list for PBXNativeTarget "Click" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2443A80A28A42F0C00FA9C3A /* Debug */,
+				2443A80B28A42F0C00FA9C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2443A7D928A42F0B00FA9C3A /* Project object */;
+}
