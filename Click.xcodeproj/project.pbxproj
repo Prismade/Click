@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243DBB7A28B52BCF00D45C98 /* TempoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DBB7928B52BCF00D45C98 /* TempoView.swift */; };
 		2443A7E428A42F0B00FA9C3A /* Click.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2443A7E328A42F0B00FA9C3A /* Click.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2443A7E928A42F0C00FA9C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2443A7E828A42F0C00FA9C3A /* Assets.xcassets */; };
 		2443A7EF28A42F0C00FA9C3A /* Click WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2443A7EE28A42F0C00FA9C3A /* Click WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -16,6 +17,8 @@
 		2454381128B2322B0015AD15 /* WorkoutWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2454381028B2322B0015AD15 /* WorkoutWorker.swift */; };
 		2454381328B233230015AD15 /* TimerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2454381228B233230015AD15 /* TimerWorker.swift */; };
 		2454381728B243920015AD15 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2454381628B243920015AD15 /* HealthKit.framework */; };
+		246CBE2E290B1C1000738254 /* ParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CBE2D290B1C1000738254 /* ParameterView.swift */; };
+		247CF030290B29E50081D346 /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF02F290B29E50081D346 /* SignatureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		243DBB7928B52BCF00D45C98 /* TempoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoView.swift; sourceTree = "<group>"; };
 		2443A7DF28A42F0B00FA9C3A /* Click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Click.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2443A7E328A42F0B00FA9C3A /* Click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Click.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2443A7E828A42F0C00FA9C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		2454381228B233230015AD15 /* TimerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWorker.swift; sourceTree = "<group>"; };
 		2454381428B243920015AD15 /* Click WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Click WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		2454381628B243920015AD15 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		246CBE2D290B1C1000738254 /* ParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterView.swift; sourceTree = "<group>"; };
+		247CF02F290B29E50081D346 /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +124,11 @@
 		2443A7F228A42F0C00FA9C3A /* Click WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				2443A7F528A42F0C00FA9C3A /* ClickApp.swift */,
-				2443A7F328A42F0C00FA9C3A /* MainView.swift */,
+				247CF02E290B215F0081D346 /* Controls */,
+				246CBE2C290B1BF500738254 /* Views */,
+				247CF02D290B20E00081D346 /* Workers */,
 				2443A80C28A4337300FA9C3A /* SettingsProvider.swift */,
-				2454381228B233230015AD15 /* TimerWorker.swift */,
-				2454381028B2322B0015AD15 /* WorkoutWorker.swift */,
+				2443A7F528A42F0C00FA9C3A /* ClickApp.swift */,
 				2454381428B243920015AD15 /* Click WatchKit Extension.entitlements */,
 				2443A7FE28A42F0C00FA9C3A /* Info.plist */,
 			);
@@ -135,6 +141,33 @@
 				2454381628B243920015AD15 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		246CBE2C290B1BF500738254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2443A7F328A42F0C00FA9C3A /* MainView.swift */,
+				243DBB7928B52BCF00D45C98 /* TempoView.swift */,
+				247CF02F290B29E50081D346 /* SignatureView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		247CF02D290B20E00081D346 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				2454381028B2322B0015AD15 /* WorkoutWorker.swift */,
+				2454381228B233230015AD15 /* TimerWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		247CF02E290B215F0081D346 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				246CBE2D290B1C1000738254 /* ParameterView.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247CF030290B29E50081D346 /* SignatureView.swift in Sources */,
 				2443A7F628A42F0C00FA9C3A /* ClickApp.swift in Sources */,
+				246CBE2E290B1C1000738254 /* ParameterView.swift in Sources */,
 				2454381328B233230015AD15 /* TimerWorker.swift in Sources */,
 				2454381128B2322B0015AD15 /* WorkoutWorker.swift in Sources */,
 				2443A80D28A4337300FA9C3A /* SettingsProvider.swift in Sources */,
+				243DBB7A28B52BCF00D45C98 /* TempoView.swift in Sources */,
 				2443A7F428A42F0C00FA9C3A /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

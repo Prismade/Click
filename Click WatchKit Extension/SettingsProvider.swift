@@ -9,12 +9,6 @@
 import Foundation
 
 class Settings: ObservableObject {
-  enum Keys {
-    static var tempo: String { "Tempo" }
-    static var beats: String { "Beats" }
-    static var note: String { "Note" }
-  }
-  
   @Published var tempo: Int {
     didSet {
       UserDefaults.standard.set(tempo, forKey: Keys.tempo)
@@ -37,5 +31,13 @@ class Settings: ObservableObject {
     tempo = (UserDefaults.standard.object(forKey: Keys.tempo) as? Int) ?? 120
     beats = (UserDefaults.standard.object(forKey: Keys.beats) as? Int) ?? 4
     note = (UserDefaults.standard.object(forKey: Keys.note) as? Int) ?? 4
+  }
+}
+
+extension Settings {
+  enum Keys {
+    static var tempo: String { "Tempo" }
+    static var beats: String { "Beats" }
+    static var note: String { "Note" }
   }
 }
